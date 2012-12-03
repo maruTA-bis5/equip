@@ -17,22 +17,23 @@ define('_MD_EQUIP_ERROR_DBUPDATE_FAILED', 'データベースの更新に失敗�
 define('_MD_EQUIP_ERROR_EMAIL', '{0}は不正なメールアドレスです');
 define('_MD_EQUIP_ERROR_PERMISSION', '権限がありません');
 define('_MD_EQUIP_MESSAGE_CONFIRM_DELETE', '以下のデータを本当に削除しますか？');
-define('_MD_EQUIP_LANG_CONTROL', 'CONTROL');
+define('_MD_EQUIP_LANG_CONTROL', '操作');
 define('_MD_EQUIP_ERROR_CONTENT_IS_NOT_FOUND', 'CONTENT_IS_NOT_FOUND');
-define('_MD_EQUIP_LANG_ITEMS_ID', 'Items id');
-define('_MD_EQUIP_LANG_NAME', 'Name');
-define('_MD_EQUIP_LANG_TYPES_ID', 'Types id');
-define('_MD_EQUIP_LANG_INFO', 'Info');
-define('_MD_EQUIP_LANG_COUNT', 'Count');
-define('_MD_EQUIP_LANG_POSTTIME', 'Posttime');
-define('_MD_EQUIP_LANG_ADD_A_NEW_ITEMS', 'Add a new Items');
-define('_MD_EQUIP_LANG_ITEMS_EDIT', 'Items Edit');
-define('_MD_EQUIP_LANG_ITEMS_DELETE', 'Items Delete');
-define('_MD_EQUIP_LANG_ITEMS', 'Items');
-define('_MD_EQUIP_LANG_ADD_A_NEW_TYPES', 'Add a new Types');
-define('_MD_EQUIP_LANG_TYPES_EDIT', 'Types Edit');
-define('_MD_EQUIP_LANG_TYPES_DELETE', 'Types Delete');
-define('_MD_EQUIP_LANG_TYPES', 'Types');
+define('_MD_EQUIP_LANG_ITEMS_ID', 'ID');
+define('_MD_EQUIP_LANG_NAME', '備品名');
+define('_MD_EQUIP_LANG_TYPES_ID', '備品種別');
+define('_MD_EQUIP_LANG_TYPES_NAME', '備品種別名');
+define('_MD_EQUIP_LANG_INFO', 'コメント');
+define('_MD_EQUIP_LANG_COUNT', '備品残数');
+define('_MD_EQUIP_LANG_POSTTIME', '更新日時');
+define('_MD_EQUIP_LANG_ADD_A_NEW_ITEMS', '備品を登録する');
+define('_MD_EQUIP_LANG_ITEMS_EDIT', '備品情報編集');
+define('_MD_EQUIP_LANG_ITEMS_DELETE', '備品情報削除');
+define('_MD_EQUIP_LANG_ITEMS', '備品');
+define('_MD_EQUIP_LANG_ADD_A_NEW_TYPES', '備品種別を追加する');
+define('_MD_EQUIP_LANG_TYPES_EDIT', '備品種別編集');
+define('_MD_EQUIP_LANG_TYPES_DELETE', '備品種別削除');
+define('_MD_EQUIP_LANG_TYPES', '備品種別');
 
 
 

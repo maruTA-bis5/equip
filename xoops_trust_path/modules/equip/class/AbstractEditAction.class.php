@@ -27,12 +27,15 @@ abstract class Equip_AbstractEditAction extends Equip_AbstractAction
      * @param   void
      * 
      * @return  int
+     * 
+     * TODO: factory生成コードではIDが取得できなかったのはなぜ？
     **/
     protected function _getId()
     {
-        $req = $this->mRoot->mContext->mRequest;
-        $dataId = $req->getRequest(_REQUESTED_DATA_ID);
-        return isset($dataId) ? intval($dataId) : intval($req->getRequest($this->_getHandler()->mPrimary));
+        //$req = $this->mRoot->mContext->mRequest;
+        //$dataId = $req->getRequest(_REQUESTED_DATA_ID);
+        $dataId = isset($_GET['_id']) ? $_GET['_id'] : $_POST['items_id'];
+        return isset($dataId) ? intval($dataId) : 0;//intval($req->getRequest($this->_getHandler()->mPrimary));
     }
 
     /**

@@ -16,7 +16,7 @@ if(!defined('EQUIP_TRUST_PATH'))
 }
 
 require_once EQUIP_TRUST_PATH . '/class/EquipUtils.class.php';
-{{require::Enum}}
+//{{require::Enum}}
 /**
  * Equip_AssetPreloadBase
 **/
