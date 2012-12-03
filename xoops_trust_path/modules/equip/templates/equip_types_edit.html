@@ -1,0 +1,28 @@
+<div class="equip">
+<h1><{$smarty.const._MD_EQUIP_LANG_TYPES_EDIT}></h1>
+<{if $actionForm->hasError()}>
+  <ul class="error">
+    <{foreach item=message from=$actionForm->getErrorMessages()}>
+      <li><{$message|xoops_escape}></li>
+    <{/foreach}>
+  </ul>
+<{/if}>
+<form action="<{xoops_cooluri dirname=$dirname dataname=types action=edit}>" method="post">
+  <dl class="edit">
+
+  <{xoops_input type=hidden name=types_id value=$actionForm->get('types_id')}>
+
+  <div class="control-group">
+    <label for="name" class="control-labelrequired"><{$smarty.const._MD_EQUIP_LANG_NAME}></label>
+    <div class="controls"><{xoops_input type=text name=name value=$actionForm->get('name') class="span4" maxlength=255required}></div>
+  </div>
+
+    <dt></dt>
+    <dd>
+      <{xoops_token form=$actionForm}>
+      <input type="submit" value="<{$smarty.const._SUBMIT}>" />
+      <input type="submit" value="<{$smarty.const._CANCEL}>" name="_form_control_cancel" />
+    </dd>
+  </dl>
+</form>
+</div>
