@@ -303,7 +303,7 @@ class Equip_Module extends Legacy_ModuleAdapter
 		$viewStatus = (getenv('REQUEST_METHOD') == 'POST') ?
 			$this->mAction->execute() :
 			$this->mAction->getDefaultView();
-	
+	    
 		if(in_array($viewStatus,$this->_mAllowViewNames))
 		{
 			$methodName = 'executeView' . ucfirst($viewStatus);
@@ -400,7 +400,8 @@ class Equip_Module extends Legacy_ModuleAdapter
 		**/
 		XCube_DelegateUtils::call('Module.' . $this->mXoopsModule->get('dirname') . '.Event.Exception.ActionNotFound');
 		$root =& XCube_Root::getSingleton();
-		$root->mController->executeForward(XOOPS_URL);
+		$root->mController->executeForward(
+            XOOPS_URL.'/modules/'.$this->mXoopsModule->get('dirname').'/?action=Main');
 	}
 
 	/**

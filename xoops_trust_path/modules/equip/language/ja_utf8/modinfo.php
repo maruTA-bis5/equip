@@ -61,6 +61,6 @@ define('_MI_EQUIP_TPL_TYPES_LIST', 'Types List');
 define('_MI_EQUIP_TPL_TYPES_EDIT', 'Types Edit');
 define('_MI_EQUIP_TPL_TYPES_DELETE', 'Types Delete');
 define('_MI_EQUIP_TPL_TYPES_VIEW', 'Types View');
-
+define('_MI_EQUIP_TPL_MAIN', 'Main Page');
 
 ?>

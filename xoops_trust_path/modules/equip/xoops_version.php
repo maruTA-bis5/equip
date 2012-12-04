@@ -81,6 +81,7 @@ $modversion['templates'] = array(
         array('file' => '{dirname}_types_edit.html','description' => _MI_EQUIP_TPL_TYPES_EDIT),
         array('file' => '{dirname}_types_list.html','description' => _MI_EQUIP_TPL_TYPES_LIST),
         array('file' => '{dirname}_types_view.html','description' => _MI_EQUIP_TPL_TYPES_VIEW),
+        array('file' => '{dirname}_main.html','description' => _MI_EQUIP_TPL_MAIN),
 
 ##[/cubson:templates]
 );
