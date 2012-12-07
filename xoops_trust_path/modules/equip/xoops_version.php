@@ -21,7 +21,7 @@ require_once EQUIP_TRUST_PATH . '/class/EquipUtils.class.php';
 // Define a basic manifesto.
 //
 $modversion['name'] = $myDirName;
-$modversion['version'] = 0.01;
+$modversion['version'] = 0.02;
 $modversion['description'] = _MI_EQUIP_DESC_EQUIP;
 $modversion['author'] = _MI_EQUIP_LANG_AUTHOR;
 $modversion['credits'] = _MI_EQUIP_LANG_CREDITS;
