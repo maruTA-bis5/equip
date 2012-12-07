@@ -1,114 +1,114 @@
 <div class="equip">
-<h1><{$smarty.const._MD_EQUIP_LANG_ITEMS}><{$smarty.const._LIST}></h1>
+<h1><{.const._MD_EQUIP_LANG_ITEMS}><{.const._LIST}></h1>
 <ul class="hmenu">
-  <li><a href="<{xoops_cooluri dirname=$dirname dataname=$dataname action=edit}>"><{$smarty.const._MD_EQUIP_LANG_ADD_A_NEW_ITEMS}></a></li>
+  <li><a href="<{xoops_cooluri dirname= dataname= action=edit}>"><{.const._MD_EQUIP_LANG_ADD_A_NEW_ITEMS}></a></li>
 </ul>
 
-<{if count($objects) > 0}>
-  <div class="pagenavi"><{xoops_pagenavi pagenavi=$pageNavi}></div>
+<{if count() > 0}>
+  <div class="pagenavi"><{xoops_pagenavi pagenavi=}></div>
   <table class="outer" summary="">
     <thead>
       <tr>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_ITEMS_ID}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_ITEMS_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_ITEMS_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_ITEMS_ID}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_ITEMS_ID}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_ITEMS_ID}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_NAME}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_NAME}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_NAME}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_NAME}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_NAME}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_NAME}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_TYPES_ID}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_TYPES_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_TYPES_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_TYPES_ID}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_TYPES_ID}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_TYPES_ID}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_INFO}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_INFO}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_INFO}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_INFO}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_INFO}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_INFO}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_COUNT}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_COUNT}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_COUNT}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_COUNT}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_COUNT}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_COUNT}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_POSTTIME}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_ITEMS_SORT_KEY_POSTTIME}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_ITEMS_SORT_KEY_POSTTIME}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_POSTTIME}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_ITEMS_SORT_KEY_POSTTIME}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_ITEMS_SORT_KEY_POSTTIME}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
-        <th><{$smarty.const._MD_EQUIP_LANG_CONTROL}></th>
+        <th><{.const._MD_EQUIP_LANG_CONTROL}></th>
       </tr>
     </thead>
     <tbody>
-      <{foreach item=obj from=$objects}>
+      <{foreach item=obj from=}>
         <tr class="<{cycle values='odd,even'}>">
-          <td><{$obj->getShow('items_id')}></td>
-          <td><{$obj->getShow('name')}></td>
-          <td><{$obj->getShow('types_id')}></td>
-          <td><{$obj->getShow('info')}></td>
-          <td><{$obj->getShow('count')}></td>
-          <td><{$obj->getShow('posttime')|xoops_formattimestamp:m}></td>
+          <td><{->getShow('items_id')}></td>
+          <td><{->getShow('name')}></td>
+          <td><{->getShow('types_id')}></td>
+          <td><{->getShow('info')}></td>
+          <td><{->getShow('count')}></td>
+          <td><{->getShow('posttime')|xoops_formattimestamp:m}></td>
 
           <td>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('items_id') action=view}>"><{$smarty.const._VIEW}></a>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('items_id') action=edit}>"><{$smarty.const._EDIT}></a>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname data_id=$obj->getShow('items_id') action=delete}>"><{$smarty.const._DELETE}></a>
+            <a href="<{xoops_cooluri dirname= dataname=$
+     
+
           </td>
-        </tr>
+        </
       <{/foreach}>
     </tbody>
   </table>
-  <div class="pagenavi"><{xoops_pagenavi pagenavi=$pageNavi}></div>
+  <div class="pagenavi">
 <{/if}>
 
-<{assign var="dataname2" value="types"}>
-<h1><{$smarty.const._MD_EQUIP_LANG_TYPES}><{$smarty.const._LIST}></h1>
-<ul class="hmenu">
-  <li><a href="<{xoops_cooluri dirname=$dirname dataname=$dataname2 action=edit}>"><{$smarty.const._MD_EQUIP_LANG_ADD_A_NEW_TYPES}></a></li>
+<{assign var="dataname2" 
+<h1><{
+<ul class=
+  <li><a hre
 </ul>
 
-<{if count($tobjects) > 0}>
-  <div class="pagenavi"><{xoops_pagenavi pagenavi=$pageNavi}></div>
+<{if count() > 0}>
+  <div class="pa
   <table class="outer" summary="">
     <thead>
       <tr>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_TYPES_ID}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_TYPES_SORT_KEY_TYPES_ID}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_TYPES_SORT_KEY_TYPES_ID}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_TYPES_ID}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_TYPES_S
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_TYPES_SORT_KEY_TYPES_ID}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_TYPES_NAME}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_TYPES_SORT_KEY_NAME}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_TYPES_SORT_KEY_NAME}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_TYPES_
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_TYPES_SORT_KEY_NAME}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_TYPES_SORT_KEY_NAME}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
         <th>
-          <{$smarty.const._MD_EQUIP_LANG_POSTTIME}>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=<{$smarty.const.EQUIP_TYPES_SORT_KEY_POSTTIME}>"><img src="images/up.gif" alt="<{$smarty.const._ASCENDING}>" title="<{$smarty.const._ASCENDING}>" /></a>
-          <a href="<{$pageNavi->renderUrlForSort()}>&amp;<{$pageNavi->getPrefix()}>sort=-<{$smarty.const.EQUIP_TYPES_SORT_KEY_POSTTIME}>"><img src="images/down.gif" alt="<{$smarty.const._DESCENDING}>" title="<{$smarty.const._DESCENDING}>" /></a>
+          <{.const._MD_EQUIP_LANG_POSTTIME}>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=<{.const.EQUIP_TYPES_SORT_KEY_POSTTIME}>"><img src="images/up.gif" alt="<{.const._ASCENDING}>" title="<{.const._ASCENDING}>" /></a>
+          <a href="<{->renderUrlForSort()}>&amp;<{->getPrefix()}>sort=-<{.const.EQUIP_TYPES_SORT_KEY_POSTTIME}>"><img src="images/down.gif" alt="<{.const._DESCENDING}>" title="<{.const._DESCENDING}>" /></a>
         </th>
-        <th><{$smarty.const._MD_EQUIP_LANG_CONTROL}></th>
+        <th>
       </tr>
     </thead>
     <tbody>
-      <{foreach item=obj from=$tobjects}>
+      <{fo
         <tr class="<{cycle values='odd,even'}>">
-          <td><{$obj->getShow('types_id')}></td>
-          <td><{$obj->getShow('name')}></td>
-          <td><{$obj->getShow('posttime')|xoops_formattimestamp:m}></td>
+          <td><{->getShow('types_id')}></td>
+          <td><{->getShow('name')}></td>
+          <td><{->getShow('posttime')|xoops_formattimestamp:m}></td>
 
           <td>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname2 data_id=$obj->getShow('types_id') action=view}>"><{$smarty.const._VIEW}></a>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname2 data_id=$obj->getShow('types_id') action=edit}>"><{$smarty.const._EDIT}></a>
-            <a href="<{xoops_cooluri dirname=$dirname dataname=$dataname2 data_id=$obj->getShow('types_id') action=delete}>"><{$smarty.const._DELETE}></a>
-          </td>
-        </tr>
+    
+            <a href="<{xoops_cooluri dirname= dataname= data_id=->getShow('types_id') action=edit}>"><{.const._EDIT}></a>
+            <a href="<{xoops_cooluri dirname= dataname= data_id=->ge
+          </t
+        </tr
       <{/foreach}>
     </tbody>
   </table>
-  <div class="pagenavi"><{xoops_pagenavi pagenavi=$pageNavi}></div>
+  <di
 <{/if}>
 </div>
