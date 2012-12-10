@@ -46,9 +46,16 @@ class Equip_MainAction extends Equip_AbstractListAction
 	{
         $types = new Equip_TypesListAction;
         $types->execute();
+        $tobj = $types->mObjects;
+        $typelist = array();
+        foreach ($tobj as $type) {
+            $typelist[$type->get('types_id')] = $type->get('name');
+        }
+        
 		$render->setTemplateName($this->mAsset->mDirname . '_main.html');
 		$render->setAttribute('objects', $this->mObjects);
-        $render->setAttribute('tobjects', $types->mObjects);
+        $render->setAttribute('tobjects', $tobj);
+        $render->setAttribute('typelist', $typelist);
 		$render->setAttribute('dirname', $this->mAsset->mDirname);
 		$render->setAttribute('dataname', self::DATANAME);
 		$render->setAttribute('pageNavi', $this->mFilter->mNavi);
