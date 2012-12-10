@@ -44,10 +44,11 @@
     </thead>
     <tbody>
       <{foreach item=obj from=$objects}>
+        <{assign var=typeid value=$obj->get('types_id')}>
         <tr class="<{cycle values='odd,even'}>">
           <td><{$obj->getShow('items_id')}></td>
           <td><{$obj->getShow('name')}></td>
-          <td><{$typelist.$obj->get('types_id')}></td>
+          <td><{$typelist.$typeid}></td>
           <td><{$obj->getShow('info')}></td>
           <td><{$obj->getShow('count')}></td>
           <td><{$obj->getShow('posttime')|xoops_formattimestamp:m}></td>
