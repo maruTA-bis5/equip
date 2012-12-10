@@ -1,0 +1,21 @@
+<div class="blockTitle">残量少数な備品</div>
+<div class="blockCont">
+<ul>
+<{foreach from=$warn item=obj}>
+<li><{$obj->getShow('name')}></li>
+<{foreachelse}>
+<li>特にありませぬ</li>
+<{/foreach}>
+</ul>
+</div>
+
+<div class="blockTitle">残量がない備品</div>
+<div class="blockCont">
+<ul>
+<{foreach from=$emp item=obj}>
+<li><{$obj->getShow('name')}></li>
+<{foreachelse}>
+<li>特にありませぬ</li>
+<{/foreach}>
+</ul>
+</div>

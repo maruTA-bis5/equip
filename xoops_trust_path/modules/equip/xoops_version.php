@@ -170,5 +170,16 @@ $modversion['blocks'] = array(
 ##[cubson:block]
 ##[/cubson:block]
 );
-
+$modversion['blocks'][1] = array(
+    'unc_num'           => 1,
+    'file'              => 'StatusBlock.class.php',
+    'class'             => 'StatusBlock',
+    'name'              => _MI_EQUIP_BLOCK_NAME_STATUS,
+    'description'       => _MI_EQUIP_BLOCK_DESC_STATUS,
+    'options'           => '',
+    'template'          => '{dirname}_block_status.html',
+    'can_clone'         => true,
+    'show_all_module'   => true,
+    'visible_any'      => true,
+);
 ?>
