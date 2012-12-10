@@ -19,7 +19,11 @@
 
   <div class="control-group">
     <label for="types_id" class="control-label"><{$smarty.const._MD_EQUIP_LANG_TYPES_ID}></label>
-    <div class="controls"><{xoops_input type=text name=types_id value=$actionForm->get('types_id') class="span1"}></div>
+    <div class="controls">
+      <select name="types_id" id="types_id">
+      <{xoops_optionsArray from=$typelist label="name" value="value" default=$type_default class="span1"}>
+      </select>
+    </div>
   </div>
 
   <div class="control-group">
