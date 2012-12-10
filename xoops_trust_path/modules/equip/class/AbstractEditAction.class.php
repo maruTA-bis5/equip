@@ -34,7 +34,8 @@ abstract class Equip_AbstractEditAction extends Equip_AbstractAction
     {
         //$req = $this->mRoot->mContext->mRequest;
         //$dataId = $req->getRequest(_REQUESTED_DATA_ID);
-        $dataId = isset($_GET['_id']) ? $_GET['_id'] : $_POST['items_id'];
+        $dataId = isset($_GET['_id']) ? $_GET['_id'] : null;
+        $dataId = ($dataId==null) ? (isset($_POST['items_id']) ? $_POST['items_id'] : $_POST['types_id']) : $dataId;
         return isset($dataId) ? intval($dataId) : 0;//intval($req->getRequest($this->_getHandler()->mPrimary));
     }
 
